@@ -1,0 +1,86 @@
+baseurl = "https://marek.onl"
+languageCode = "en-us"
+title = "Notes"
+theme = "statine"
+
+preserveTaxonomyNames = true
+rssLimit = 10
+paginate = 10
+
+# Code highlighting
+pygmentsCodefences = true
+pygmentsStyle = "native"
+
+# Taxonomies (only tags and categories are supported out of the box but you can
+# add more)
+[taxonomies]
+    # category = "categories"
+    tag = "tags"
+
+# Configure permalinks style
+[permalinks]
+    post = "/:slug/"
+    page = "/:slug/"
+
+# Configure main navbar links. They can have a weight to select the order.
+# This links to content within the content/post/ folder
+# [[menu.main]]
+#     name = "Posts"
+#     url = "/post/"
+#     weight = -150
+
+# This links to the page about.md
+# [[menu.main]]
+#     name = "About"
+#     url = "/about/"
+#     weight = -110
+
+# Make the tags and categories pages accessible directly from the navbar.
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = -120
+
+# [[menu.main]]
+#     name = "Categories"
+#     url = "/categories/"
+#     weight = -130
+
+# Site wide params and SEO
+[params]
+    # Site description. Individual pages can have descriptions too but if
+    # missing it will fallback to that one.
+    description = """Marek's blog & notes."""
+    # Author of the site
+    authorName = "Marek"
+    # Main image for the author. This will be the default image for SEO.
+    [params.imgname]
+        name = "img/main.jpg"
+        # Add an alt description for the image
+        alt = "Profile picture"
+
+    # Optional: add a twitter handle and mastodon handle for SEO.
+    [params.twitter]
+        name = "@upbqdn"
+    # [params.mastodon]
+        # name = "@marek"
+        # host = "mathstodon.xyz"
+    
+    # Enable link to feed in footer
+    blogrss = true
+
+    # Enable pingback and webmention via webmention.io
+    webmention = "marek.onl"
+
+
+# Sitemap location (default is /sitemap.xml)
+[sitemap]
+  filename = "sitemap.xml"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 6
+    startLevel = 2

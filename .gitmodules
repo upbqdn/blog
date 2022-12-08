@@ -1,0 +1,3 @@
+[submodule "themes/statine"]
+	path = themes/statine
+	url = https://gitlab.com/upbqdn/statine

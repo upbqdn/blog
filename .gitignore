@@ -1,0 +1,4 @@
+public/
+content/
+static/_pagefind/
+.hugo_build.lock
