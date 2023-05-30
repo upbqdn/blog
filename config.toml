@@ -50,7 +50,7 @@ pygmentsStyle = "native"
 [params]
     # Site description. Individual pages can have descriptions too but if
     # missing it will fallback to that one.
-    description = """Marek's blog & notes."""
+    description = """Marek's notes"""
     # Author of the site
     authorName = "Marek"
     # Main image for the author. This will be the default image for SEO.
