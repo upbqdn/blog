@@ -4,12 +4,16 @@ title = "Notes"
 theme = "statine"
 
 preserveTaxonomyNames = true
-rssLimit = 10
+rssLimit = 100
 paginate = 10
 
 # Code highlighting
 pygmentsCodefences = true
 pygmentsStyle = "native"
+
+[author]
+    name = "Marek"
+    email = "mail@marek.onl"
 
 # Taxonomies (only tags and categories are supported out of the box but you can
 # add more)
