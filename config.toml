@@ -45,6 +45,10 @@ pygmentsStyle = "native"
 #     url = "/categories/"
 #     weight = -130
 
+[permalinks]
+  [permalinks.term]
+    tags = '/:slug/'
+
 # Site wide params and SEO
 [params]
     # Site description. Individual pages can have descriptions too but if
