@@ -1,16 +1,9 @@
-baseurl = "https://marek.onl"
+baseURL = "https://marek.onl"
 languageCode = "en-us"
 title = "Notes"
 theme = "statine"
 
-preserveTaxonomyNames = true
 rssLimit = 100
-paginate = 10
-
-# Code highlighting
-pygmentsCodefences = true
-pygmentsStyle = "native"
-
 
 # Taxonomies (only tags and categories are supported out of the box but you can
 # add more)
