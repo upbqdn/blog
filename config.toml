@@ -2,7 +2,6 @@ baseURL = "https://marek.onl"
 languageCode = "en-us"
 title = "Notes"
 theme = "statine"
-
 rssLimit = 100
 
 # Taxonomies (only tags and categories are supported out of the box but you can
@@ -10,14 +9,6 @@ rssLimit = 100
 [taxonomies]
     # category = "categories"
     tag = "tags"
-
-
-# Make the tags and categories pages accessible directly from the navbar.
-[[menu.main]]
-    name = "Tags"
-    url = "/tags/"
-    weight = -120
-
 
 [permalinks]
   [permalinks.term]
@@ -36,11 +27,14 @@ rssLimit = 100
 
     [params.author]
         name = "Marek"
-        email = "hi@marek.onl"
+        email = "m@rek.onl"
 
 # Sitemap location (default is /sitemap.xml)
 [sitemap]
   filename = "sitemap.xml"
+
+[minify]
+  minifyOutput = true
 
 [markup]
     [markup.tableOfContents]
