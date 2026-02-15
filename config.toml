@@ -20,9 +20,6 @@ rssLimit = 100
     # missing it will fallback to that one.
     description = """Marek's notes"""
 
-    # Enable link to feed in footer
-    blogrss = true
-
     # Enable pingback and webmention via webmention.io
     webmention = "marek.onl"
 
