@@ -8,7 +8,6 @@ rssLimit = 100
 # Taxonomies (only tags and categories are supported out of the box but you can
 # add more)
 [taxonomies]
-    # category = "categories"
     tag = "tags"
 
 [permalinks]
@@ -26,10 +25,6 @@ rssLimit = 100
     [params.author]
         name = "Marek"
         email = "m@rek.onl"
-
-# Sitemap location (default is /sitemap.xml)
-[sitemap]
-  filename = "sitemap.xml"
 
 [minify]
   minifyOutput = true
