@@ -1,5 +1,5 @@
 baseURL = "https://marek.onl"
-languageCode = "en-us"
+locale = "en"
 title = "Notes"
 theme = "statine"
 cleanDestinationDir = true
