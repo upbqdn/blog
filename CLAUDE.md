@@ -25,14 +25,16 @@ cd themes/statine && npm run build-tw
 
 Generate Pagefind search index (run after `hugo` build):
 ```
-pagefind --site public
+npx pagefind@1.5.2 --site public
 ```
+
+That writes the bundle to `public/pagefind/`, which is what a bare `hugo` build links to. Deploys instead export `HUGO_PAGEFIND_VERSION`, so the theme links to `/pagefind-<version>/` and the bundle is written there: the URL changes with the release, and a browser holding a cached bundle never meets an index from a different one. The version and the reasoning live with `puke-pagefind-version` in `~/repos/puke/puke.el`; keep the command above in step with it.
 
 ## Architecture
 
 - `config.toml` — Site config: base URL, taxonomies (tags only), permalink rules, MathJax, unsafe HTML enabled
 - `content/` — Markdown posts with TOML front matter (`+++`). Gitignored (content managed separately)
-- `static/` — Favicons, data files (charts, mining media). `_pagefind/` and `data/` are gitignored
+- `static/` — Favicons, data files (charts, mining media). `pagefind/` and `data/` are gitignored
 - `themes/statine/` — Git submodule; has its own `CLAUDE.md` with detailed theme architecture
 
 The theme handles: Tailwind CSS v4 pipeline, dark mode (system `prefers-color-scheme`), MathJax, Pagefind search UI, Remark42 comments, EB Garamond + Iosevka fonts, Schema.org microdata.
