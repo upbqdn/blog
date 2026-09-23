@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Hugo static site for [marek.onl](https://marek.onl) — a personal notes blog. Uses the Statine theme (git submodule at `themes/statine/`, repo: `gitlab.com/upbqdn/statine`).
+Hugo static site for [marek.onl](https://marek.onl) — a personal notes blog. Uses the Statine theme (git submodule at `themes/statine/`, repo: `github.com/upbqdn/statine`).
 
 ## Commands
 
@@ -37,7 +37,7 @@ That writes the bundle to `public/pagefind/`, which is what a bare `hugo` build 
 - `static/` — Favicons, data files (charts, mining media). `pagefind/` and `data/` are gitignored
 - `themes/statine/` — Git submodule; has its own `CLAUDE.md` with detailed theme architecture
 
-The theme handles: Tailwind CSS v4 pipeline, dark mode (system `prefers-color-scheme`), MathJax, Pagefind search UI, Remark42 comments, EB Garamond + Iosevka fonts, Schema.org microdata.
+The theme handles: Tailwind CSS v4 pipeline, dark mode (system `prefers-color-scheme`), self-hosted MathJax 4 with Pagella Math, Pagefind search UI, Remark42 comments, TeX Gyre Pagella + Iosevka fonts, Schema.org microdata.
 
 ## Content Format
 
